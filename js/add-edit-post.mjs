@@ -142,7 +142,6 @@ const handleFormSubmit = async (postId) => {
     console.log("Can't update data", error);
   }
 };
-
 (async () => {
   const params = new URLSearchParams(window.location.search);
   const postId = params.get("id");
@@ -161,7 +160,6 @@ const handleFormSubmit = async (postId) => {
   } else {
     handleChangeImageClick();
   }
-
   // add event submit
   const formElement = document.querySelector("#postForm");
   if (formElement) {
